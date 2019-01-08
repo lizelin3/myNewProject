@@ -9,17 +9,22 @@
   <ion-list>
 
     <ion-item>
-      <ion-label fixed>请输入用户名</ion-label>
+      <ion-label fixed>账号</ion-label>
       <ion-input type="text"></ion-input>
     </ion-item>
 
     <ion-item>
-      <ion-label fixed>请输入密码</ion-label>
+      <ion-label fixed>微信号</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label fixed>密码</ion-label>
       <ion-input type="password"></ion-input>
     </ion-item>
 
     <ion-item>
-      <ion-label fixed>请确认密码</ion-label>
+      <ion-label fixed>确认密码</ion-label>
       <ion-input type="password"></ion-input>
     </ion-item>
 
@@ -27,6 +32,7 @@
 
   <div padding>
     <button ion-button color="primary" block>注册</button>
+    <p>已经有账号了吗？ <button ion-button clear (click)="toLogin()">返回登录</button></p>
   </div>
 
 
