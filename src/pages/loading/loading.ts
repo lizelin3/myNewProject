@@ -1,12 +1,11 @@
 import { Component } from '@angular/core';
-
 import { LoadingController } from 'ionic-angular';
 
 
 @Component({
-  templateUrl: 'template.html'
+  templateUrl: 'loading.html'
 })
-export class BasicPage {
+export class LoadingPage {
 
   constructor(public loadingCtrl: LoadingController) { }
 
