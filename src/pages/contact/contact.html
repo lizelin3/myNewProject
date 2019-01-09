@@ -1,17 +1,61 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>
-      Contact
+    <ion-title style="text-align: center;">
+      分类页
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content>
+
   <ion-list>
-    <ion-list-header>Follow us on Twitter</ion-list-header>
-    <ion-item>
-      <ion-icon name="ionic" item-start></ion-icon>
-      @ionicframework
-    </ion-item>
+    <a ion-item (click)="openModal({charNum: 0})">
+      茶叶
+    </a>
+    <a ion-item (click)="openModal({charNum: 1})">
+      茶具
+    </a>
+    <a ion-item (click)="openModal({charNum: 2})">
+      瓷器
+    </a>
   </ion-list>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-img src="assets/img/IMG_06.jpg" ></ion-img>
+      </ion-col>
+      <ion-col>
+        <ion-img src="assets/img/IMG_02.jpg" ></ion-img>
+      </ion-col>
+      <ion-col>
+        <ion-img src="assets/img/IMG_02.jpg" ></ion-img>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-img src="assets/img/IMG_02.jpg" ></ion-img>
+      </ion-col>
+      <ion-col>
+        <ion-img src="assets/img/IMG_02.jpg" ></ion-img>
+      </ion-col>
+      <ion-col>
+        <ion-img src="assets/img/IMG_02.jpg" ></ion-img>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-img src="assets/img/IMG_02.jpg" ></ion-img>
+      </ion-col>
+      <ion-col>
+        <ion-img src="assets/img/IMG_02.jpg" ></ion-img>
+      </ion-col>
+      <ion-col>
+        <ion-img src="assets/img/IMG_02.jpg" ></ion-img>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>
+
+
+
