@@ -17,7 +17,7 @@ import {About_editPage} from "../pages/about/about_edit";
   templateUrl: 'app.html'
 })
 export class MyApp {
-  rootPage:any = About_editPage;
+  rootPage:any = HomePage;
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
     platform.ready().then(() => {
