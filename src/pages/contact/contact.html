@@ -8,50 +8,48 @@
 
 <ion-content>
 
-  <ion-list>
-    <a ion-item (click)="openModal({charNum: 0})">
-      茶叶
-    </a>
-    <a ion-item (click)="openModal({charNum: 1})">
-      茶具
-    </a>
-    <a ion-item (click)="openModal({charNum: 2})">
-      瓷器
-    </a>
-  </ion-list>
-
   <ion-grid>
     <ion-row>
-      <ion-col>
-        <ion-img src="assets/img/IMG_06.jpg" ></ion-img>
+      <ion-col col-4>
+        <ion-list>
+          <a ion-item (click)="openModal({charNum: 0})">
+            茶叶
+          </a>
+          <a ion-item (click)="openModal({charNum: 1})">
+            茶具
+          </a>
+          <a ion-item (click)="openModal({charNum: 2})">
+            瓷器
+          </a>
+        </ion-list>
       </ion-col>
-      <ion-col>
-        <ion-img src="assets/img/IMG_02.jpg" ></ion-img>
-      </ion-col>
-      <ion-col>
-        <ion-img src="assets/img/IMG_02.jpg" ></ion-img>
-      </ion-col>
-    </ion-row>
-    <ion-row>
-      <ion-col>
-        <ion-img src="assets/img/IMG_02.jpg" ></ion-img>
-      </ion-col>
-      <ion-col>
-        <ion-img src="assets/img/IMG_02.jpg" ></ion-img>
-      </ion-col>
-      <ion-col>
-        <ion-img src="assets/img/IMG_02.jpg" ></ion-img>
-      </ion-col>
-    </ion-row>
-    <ion-row>
-      <ion-col>
-        <ion-img src="assets/img/IMG_02.jpg" ></ion-img>
-      </ion-col>
-      <ion-col>
-        <ion-img src="assets/img/IMG_02.jpg" ></ion-img>
-      </ion-col>
-      <ion-col>
-        <ion-img src="assets/img/IMG_02.jpg" ></ion-img>
+      <ion-col col-8>
+          <ion-list>
+              <ion-card>
+                  <ion-card-header>
+                    Header
+                  </ion-card-header>
+                  <ion-card-content>
+                    The British use the term "header", but the American term "head-shot" the English simply refuse to adopt.
+                  </ion-card-content>
+                </ion-card>
+                <ion-card>
+                    <ion-card-header>
+                      Header
+                    </ion-card-header>
+                    <ion-card-content>
+                      The British use the term "header", but the American term "head-shot" the English simply refuse to adopt.
+                    </ion-card-content>
+                  </ion-card>
+                  <ion-card>
+                      <ion-card-header>
+                        Header
+                      </ion-card-header>
+                      <ion-card-content>
+                        The British use the term "header", but the American term "head-shot" the English simply refuse to adopt.
+                      </ion-card-content>
+                    </ion-card>
+          </ion-list>
       </ion-col>
     </ion-row>
   </ion-grid>
