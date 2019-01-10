@@ -1,14 +1,18 @@
+
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+
 
 @Component({
-  selector: 'page-contact',
   templateUrl: 'contact.html'
 })
 export class ContactPage {
+  items = [
+    '茶叶',
+    '茶具',
+    '瓷器'
+  ];
 
-  constructor(public navCtrl: NavController) {
-
+  itemSelected(item: string) {
+    console.log("Selected Item", item);
   }
-
 }

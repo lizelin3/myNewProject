@@ -1,39 +1,29 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>注册页</ion-title>
+    <ion-title style="text-align: center;">注册</ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content>
+<ion-content padding>
 
   <ion-list>
-
     <ion-item>
-      <ion-label fixed>账号</ion-label>
+      <ion-label fixed>请输入用户名</ion-label>
       <ion-input type="text"></ion-input>
     </ion-item>
 
     <ion-item>
-      <ion-label fixed>微信号</ion-label>
-      <ion-input type="text"></ion-input>
-    </ion-item>
-
-    <ion-item>
-      <ion-label fixed>密码</ion-label>
+      <ion-label fixed>请输入密码</ion-label>
       <ion-input type="password"></ion-input>
     </ion-item>
 
     <ion-item>
-      <ion-label fixed>确认密码</ion-label>
+      <ion-label fixed>请确认密码</ion-label>
       <ion-input type="password"></ion-input>
     </ion-item>
-
   </ion-list>
 
-  <div padding>
-    <button ion-button color="primary" block>注册</button>
-    <p>已经有账号了吗？ <button ion-button clear (click)="toLogin()">返回登录</button></p>
-  </div>
-
+    <button ion-button block color="light" (click)="doAlert()">注册</button>
 
 </ion-content>
+

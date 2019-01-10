@@ -1,57 +1,64 @@
 <ion-header>
   <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
+  <ion-list>
+    <ion-item *ngFor="let item of items" style="display: none;">
+      {{ item }}
+    </ion-item>
+  </ion-list>
 </ion-header>
 
 <ion-content class="grid-basic-page">
+  <ion-slides pager style="width: 100%; height: 300px;" padding>
+    <ion-slide>
+      <img src="assets/img/IMG_01.jpg" />
+    </ion-slide>
 
-    <ion-slides>
-        <ion-slide>
-          <h1>Slide 1</h1>
-        </ion-slide>
-        <ion-slide>
-          <h1>Slide 2</h1>
-        </ion-slide>
-        <ion-slide>
-          <h1>Slide 3</h1>
-        </ion-slide>
-      </ion-slides>
+    <ion-slide style="background-color: blue">
+      <img src="assets/img/IMG_02.jpg" />
+    </ion-slide>
 
-  <p padding>
-    热销商品
-  </p>
+    <ion-slide style="background-color: red">
+      <img src="assets/img/IMG_05.jpg" />
+    </ion-slide>
+  </ion-slides>
+
+  <ion-icon class="ion-md-flame" padding></ion-icon>
+  <p padding>热销商品</p>
+
   <ion-grid>
     <ion-row>
       <ion-col>
-        <ion-img width="80" height="80" src="assets/img/IMG_02.jpg"></ion-img>
+        <ion-img src="assets/img/IMG_06.jpg" ></ion-img>
       </ion-col>
       <ion-col>
-        <ion-img width="80" height="80" src="assets/img/IMG_03.jpg"></ion-img>
+        <ion-img src="assets/img/IMG_02.jpg" ></ion-img>
       </ion-col>
       <ion-col>
-        <ion-img width="80" height="80" src="assets/img/IMG_04.jpg"></ion-img>
+        <ion-img src="assets/img/IMG_02.jpg" ></ion-img>
       </ion-col>
     </ion-row>
     <ion-row>
-        <ion-col>
-          <ion-img width="80" height="80" src="assets/img/IMG_02.jpg"></ion-img>
-        </ion-col>
-        <ion-col>
-          <ion-img width="80" height="80" src="assets/img/IMG_03.jpg"></ion-img>
-        </ion-col>
-        <ion-col>
-          <ion-img width="80" height="80" src="assets/img/IMG_04.jpg"></ion-img>
-        </ion-col>
-      </ion-row>
-      <ion-row>
-          <ion-col>
-            <ion-img width="80" height="80" src="assets/img/IMG_02.jpg"></ion-img>
-          </ion-col>
-          <ion-col>
-            <ion-img width="80" height="80" src="assets/img/IMG_03.jpg"></ion-img>
-          </ion-col>
-          <ion-col>
-            <ion-img width="80" height="80" src="assets/img/IMG_04.jpg"></ion-img>
-          </ion-col>
-        </ion-row>
+      <ion-col>
+       <ion-img src="assets/img/IMG_02.jpg" ></ion-img>
+      </ion-col>
+      <ion-col>
+       <ion-img src="assets/img/IMG_02.jpg" ></ion-img>
+      </ion-col>
+      <ion-col>
+        <ion-img src="assets/img/IMG_02.jpg" ></ion-img>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-img src="assets/img/IMG_02.jpg" ></ion-img>
+      </ion-col>
+      <ion-col>
+        <ion-img src="assets/img/IMG_02.jpg" ></ion-img>
+      </ion-col>
+      <ion-col>
+        <ion-img src="assets/img/IMG_02.jpg" ></ion-img>
+      </ion-col>
+    </ion-row>
   </ion-grid>
 </ion-content>
+

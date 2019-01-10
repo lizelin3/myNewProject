@@ -1,20 +1,21 @@
-import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
 
-import { LoginPage } from '../login/login';
+import { Component } from '@angular/core';
+
+import { AlertController } from 'ionic-angular';
+
 
 @Component({
-  selector: 'page-register',
   templateUrl: 'register.html'
 })
 export class RegisterPage {
 
-  constructor(public navCtrl: NavController) {
+  constructor(public alerCtrl: AlertController) { }
 
+  doAlert() {
+    let alert = this.alerCtrl.create({
+      title: '注册成功!',
+      buttons: ['登陆?']
+    });
+    alert.present()
   }
-
-  toLogin() {
-    this.navCtrl.setRoot(LoginPage);
-  }
-
 }

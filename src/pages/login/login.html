@@ -1,8 +1,6 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>
-      登录页
-    </ion-title>
+    <ion-title style="text-align: center">登陆页</ion-title>
   </ion-navbar>
 </ion-header>
 
@@ -22,8 +20,8 @@
   </ion-list>
 
   <div padding>
-    <button ion-button color="primary" block (click)="toTabs()">登陆</button>
-    <p>还没有账号吗？ <button ion-button clear (click)="toRegister()">注册</button></p>
+    <button ion-button color="primary" block>登陆</button>
+    <p style="display: inline;">(没账号？<ion-buttons>注册</ion-buttons>)</p>
   </div>
 
 </ion-content>
