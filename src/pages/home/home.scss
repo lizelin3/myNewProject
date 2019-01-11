@@ -1,7 +1,6 @@
 page-home {
-
   ion-header{
-    background-color: #6a3e0c;
+    background-color: rgb(255, 159, 4);
   }
 
   .grid-basic-page {
@@ -16,8 +15,8 @@ page-home {
     p {
       padding: 10px 0 0 10px !important;
       margin: 0;
-      font-size:25px;
-      color:#6a3e0c;
+      font-size:24px;
+      color: rgb(88, 46, 19);
       float: left;
     }
 
@@ -27,7 +26,7 @@ page-home {
     }
     .ion-md-flame{
       color: #ff5533;
-      font-size:25px;
+      font-size:24px;
     }
   }
 }

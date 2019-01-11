@@ -1,27 +1,28 @@
 <ion-header>
   <ion-navbar>
-    <ion-title style="text-align: center">登陆页</ion-title>
+    <ion-title style="text-align: center;">登陆页</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content>
+
   <ion-list>
 
     <ion-item>
-      <ion-label stacked>用户名</ion-label>
-      <ion-input type="text"></ion-input>
+      <ion-label>Username</ion-label>
+      <ion-input type="text" value=""></ion-input>
     </ion-item>
 
     <ion-item>
-      <ion-label stacked>密码</ion-label>
-      <ion-input type="password"></ion-input>
+      <ion-label>Password</ion-label>
+      <ion-input type="password" value=""></ion-input>
     </ion-item>
 
   </ion-list>
 
   <div padding>
-    <button ion-button color="primary" block>登陆</button>
-    <p style="display: inline;">(没账号？<ion-buttons>注册</ion-buttons>)</p>
+    <button  ion-button color="primary" block (click)="toTabs()" style="font-size: 24px;">登陆</button>
   </div>
 
+  <p padding style="font-size: 16px;">还没有账号吗？<b (click) = "toRegister()" >注册</b></p>
 </ion-content>

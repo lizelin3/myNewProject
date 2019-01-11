@@ -7,17 +7,17 @@ import { RegisterPage} from "../pages/register/register";
 import { LoginPage } from '../pages/login/login';
 import { TabsPage } from '../pages/tabs/tabs';
 import { HomePage} from "../pages/home/home";
-import { ContactPage} from "../pages/contact/contact";
+import { ContactPage } from "../pages/contact/contact";
 import { AboutPage} from "../pages/about/about";
 import { SearchPage } from "../pages/search/search";
 import { DetailPage } from "../pages/detail/detail";
-import {About_editPage} from "../pages/about/about_edit";
+import { EditPage } from "../pages/edit/edit";
 
 @Component({
   templateUrl: 'app.html'
 })
 export class MyApp {
-  rootPage:any = HomePage;
+  rootPage:any = TabsPage;
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
     platform.ready().then(() => {

@@ -11,7 +11,7 @@ import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
 import { SearchPage } from '../pages/search/search';
 import { DetailPage } from '../pages/detail/detail';
-import { About_editPage } from '../pages/about/about_edit';
+import { EditPage } from "../pages/edit/edit";
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -27,7 +27,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     TabsPage,
     SearchPage,
     DetailPage,
-    About_editPage
+    EditPage
   ],
   imports: [
     BrowserModule,
@@ -44,7 +44,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     TabsPage,
     SearchPage,
     DetailPage,
-    About_editPage
+    EditPage
   ],
   providers: [
     StatusBar,

@@ -7,6 +7,12 @@
 <ion-content padding>
 
   <ion-list>
+
+    <ion-item>
+      <ion-label fixed>上传头像</ion-label>
+      <a ion-item (click)="openModal({charNum: 0})"></a>
+    </ion-item>
+
     <ion-item>
       <ion-label fixed>请输入用户名</ion-label>
       <ion-input type="text"></ion-input>
@@ -21,9 +27,34 @@
       <ion-label fixed>请确认密码</ion-label>
       <ion-input type="password"></ion-input>
     </ion-item>
+
+    <ion-item>
+      <ion-label fixed>真实姓名</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label fixed>性别</ion-label>
+      <ion-select [(ngModel)] = "gender">
+        <ion-option value="f">男</ion-option>
+        <ion-option value="m">女</ion-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label fixed>联系方式</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label fixed>地址</ion-label>
+      <ion-input type="address"></ion-input>
+    </ion-item>
   </ion-list>
 
-    <button ion-button block color="light" (click)="doAlert()">注册</button>
-
+  <div padding>
+    <button ion-button block color="primary" (click)= " presentConfirm() " style="font-size: 24px;" >注册</button>
+    <p style="font-size: 16px;">已经有账号了吗？<b (click)= " toLogin() " >返回登陆</b></p>
+  </div>
 </ion-content>
 

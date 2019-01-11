@@ -5,20 +5,32 @@
 </ion-header>
 
 <ion-content>
-
   <ion-list>
     <ion-list-header>
-      个人信息
+      修改个人信息
     </ion-list-header>
     <a ion-item (click)="openModal({charNum: 0})">
-      99
+      头像
+    </a>
+    <a ion-item (click)="openModal({charNum: 0})">
+      账号
+    </a>
+    <a ion-item (click)="openModal({charNum: 0})">
+      密码
+    </a>
+    <a ion-item (click)="openModal({charNum: 0})">
+      姓名
     </a>
     <a ion-item (click)="openModal({charNum: 1})">
-      99
+      性别
     </a>
     <a ion-item (click)="openModal({charNum: 2})">
-      99
+      联系方式
     </a>
+    <a ion-item (click)="openModal({charNum: 2})">
+      地址
+    </a>
+    <ion-list></ion-list>
   </ion-list>
 
 </ion-content>
